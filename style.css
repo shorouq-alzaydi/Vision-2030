@@ -1,0 +1,338 @@
+*
+{
+
+margin:0;
+padding: 0;
+
+}
+.row{
+  max-width:1140px;
+  margin: 0 auto;
+}
+body{
+font-family: tahoma;
+
+}
+
+.hero {
+  position: absolute;
+  width: 1140px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  margin-left: 160px;
+
+}
+header {
+  background-image: url("img/photo.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+h1{
+  color: #708090;
+}
+
+.main-nav {
+  list-style: none;
+  float: right;
+  margin-top: 30px;
+
+}
+.main-nav li{
+  display: inline-block;
+  margin-left: 20px;
+}
+.main-nav li a{
+  color: 	#696969;
+  text-decoration: none;
+  font-size:90%;
+  font-weight: bold;
+
+}
+.main-nav li a:hover{
+  color: #4682B4;
+  border-bottom: 2px solid #00FF7F;
+  transition: all 0.5s ease-in;
+  padding: 20px;
+}
+.logo img{
+  height: 100px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 160px;
+}
+.btn {
+  border: 1px solid #696969;
+  padding: 10px 30px;
+  color: #696969;
+  text-decoration: none;
+  border-radius: 12px;
+  margin-right: 15px;
+}
+
+.button-awesome{
+  margin-top: 40px;
+}
+.btn-half{
+background-color: #696969;
+color: white;
+}
+
+.btn-full:hover
+{
+  background-color: #4682B4;
+  color: white;
+  transition: all 0.5s ease-in;
+
+}
+.copy{
+  width:70%;
+  margin-left: 15%;
+  margin-bottom: 8%;
+}
+
+h3:after{
+  width: 100px;
+  height: 2px;
+  background-color: #4682B4;
+  display: block;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.features h3{
+
+  margin-top: 80px;
+  margin-bottom: 30px;
+
+}
+.arranging{
+  text-align: justify;
+
+}
+
+.features i{
+  font-size: 50px;
+  color: #00FF7F;
+  margin-left: 35%;
+  text-align:center;
+
+}
+.features{
+  text-align:center;
+
+}
+
+.features h4{
+  margin-left: 40px;
+}
+.meal-showcase{
+  list-style: none;
+  width: 100%;
+}
+
+meal-showcase li{
+  display: block;
+  width: 25%;
+  float: left;
+}
+.meal-photo{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.meal-photo img{
+  width: 40%;
+  height: auto;
+  transform: scale(1.15);
+  transition: all 0.5s;
+}
+.meal-photo img:hover{
+  transform: scale(1.05);
+}
+.meal{
+  margin-top: 60px;
+}
+
+.pic img{
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 25px;
+
+}
+.works-step{
+  margin-top: 50px;
+}
+
+.btn-block{
+background-color: #e67e22;
+color: #fff;
+border-radius: 4px;
+
+}
+
+.gap div{
+
+    margin-left: 90px;
+    margin-bottom: 30px;
+
+}
+.gap{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.form{
+  margin-top: 40px;
+  background-color:#b3b3b3;
+  margin-bottom: 40px;
+}
+.container-fluid{
+margin-top: 30px;
+margin-left: 70px;
+
+}
+
+
+.google{
+margin-left: 100px;
+}
+
+.footer{
+  background-color: #696969;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  margin-top: 40px;
+}
+
+.fa-angle-up{
+  background-color: #e67e22;
+  width: 20px;
+  text-align: center;
+  margin-top: 0px;
+
+}
+
+.footer .fa-angle-up{
+  font-size: 20px;
+  color: white;
+}
+.kontext{
+  width: 100%;
+  heigh: 100%;
+}
+.kontext .layer {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  left:0;
+  visibility: hidden;
+}
+.kontext .layer .show{
+  visibility: visible;
+}
+.kontext .capable{
+perspective: 100%;
+transform-style: preserve-3d;
+}
+
+.kontext .capable .layer{
+  transform: translateZ(-100px);
+}
+
+.kontext .capable .layer .show{
+  transform: translateZ(0px);
+}
+.kontext .capable .animate .layer .show .right{
+animation: show-right 1s forwardsease;
+}
+.kontext .capable .animate .layer .hide .right{
+animation: hide-right 1s forwardsease;
+}
+
+.kontext .capable .animate .layer .show .left{
+animation: show-left 1s forwardsease;
+}
+.kontext .capable .animate .layer .hide .left{
+animation: hide-left 1s forwardsease;
+}
+
+@@keyframes show-right {
+  0%{
+    transform: translateZ(-200px);
+  }
+  40%{
+    transform: translateZ(40%.0);
+    scale(0.8) rotateY(-20deg);
+  }
+  100%{
+    transform: translateZ(0px);
+  }
+}
+
+
+
+@@keyframes hide-right {
+  0%{
+    transform: translateZ(0px);
+    visibility: visible;
+  }
+  40%{
+    transform: translateZ(-40px.0);
+    scale(0.8) rotateY(20deg);
+  }
+  100%{
+    transform: translateZ(-200px);
+    visibility: hidden;
+  }
+}
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 053 css*/
+.jssorb053 .i {position:absolute;cursor:pointer;}
+.jssorb053 .i .b {fill:#fff;fill-opacity:0.5;}
+.jssorb053 .i:hover .b {fill-opacity:.7;}
+.jssorb053 .iav .b {fill-opacity: 1;}
+.jssorb053 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 093 css*/
+.jssora093 {display:block;position:absolute;cursor:pointer;}
+.jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093:hover {opacity:.8;}
+.jssora093.jssora093dn {opacity:.6;}
+.jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+
+.container .row{
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.features .text-center .row .copy .col-md-5{
+  margin-left: 200px;
+  margin-bottom: 40px;
+}
+
+.features img{
+
+  margin-left: 100px;
+
+}
